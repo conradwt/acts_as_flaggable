@@ -19,5 +19,5 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'minitest',            '~> 3.2.0'
   gem.add_development_dependency 'minitest-reporters',  '~> 0.9.0'
   # gem.add_runtime_dependency "rest-client"
-  gem.add_runtime_dependency     "activerecord",        '~> 3.2.6'
+  gem.add_runtime_dependency     "activerecord",        '~> 3.2.9'
 end
