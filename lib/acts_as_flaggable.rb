@@ -23,8 +23,10 @@ module Gonzo
         def find_flags_for(obj)
           flaggable = ActiveRecord::Base.send(:class_name_of_active_record_descendant, self).to_s
          
-          Flag.where( "flaggable_id = ? and flaggable_type = ?", obj.id, flaggable ).
-            order( "created_at DESC" )
+          Flag.find(:all,
+            :conditions => ["flaggable_id = ? and flaggable_type = ?", obj.id, flaggable],
+            :order => "created_at DESC"
+          )
         end
         
         # Helper class method to lookup flags for
@@ -33,8 +35,10 @@ module Gonzo
         def find_flags_by_user(user) 
           flaggable = ActiveRecord::Base.send(:class_name_of_active_record_descendant, self).to_s
           
-          Flag.where( "user_id = ? and flaggable_type = ?", user.id, flaggable ).
-            order( "created_at DESC" )
+          Flag.find(:all,
+            :conditions => ["user_id = ? and flaggable_type = ?", user.id, flaggable],
+            :order => "created_at DESC"
+          )
         end
       end
       
@@ -86,3 +90,4 @@ module Gonzo
 end
 
 ActiveRecord::Base.send(:include, Gonzo::Acts::Flaggable)
+

@@ -2,8 +2,8 @@
 require File.expand_path('../lib/version', __FILE__)
 
 Gem::Specification.new do |gem|
-  gem.authors       = ["Conrad Taylor"]
-  gem.email         = ["conradwt@gmail.com"]
+  gem.authors       = ["Cosmin Radoi"]
+  gem.email         = [""]
   gem.description   = %q{Write a gem description}
   gem.summary       = %q{Write a gem summary}
   gem.homepage      = ""
