@@ -5,7 +5,7 @@ Allows for flags to be added to multiple and different models.
 
 == Resources
 
-Install
+== Install
  * Add the library to your Gemfile with the following line:
 
  gem 'acts_as_flaggable', :git => 'git://github.com/conradwt/acts_as_flaggable.git'
