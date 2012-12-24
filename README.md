@@ -6,9 +6,11 @@ Allows for flags to be added to multiple and different models.
 == Resources
 
 Install
- * Run the following command:
+ * Run the following command in your {Rails.root}/lib directory:
+
+ git clone https://github.com/conradwt/acts_as_flaggable.git 
  
- script/plugin install http://svn.baconbear.com/rails_plugins/acts_as_flaggable
+ Note:  I'll make this gem available on rubygems.org in the near future.
  
  * Create a new rails migration and add the following self.up and self.down methods
  
